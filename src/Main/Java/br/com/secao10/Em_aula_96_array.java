@@ -29,6 +29,7 @@ public class Em_aula_96_array {
         System.out.printf("AVERAGE HEIGHT: %.2f%n", avg);
         System.out.println("oi");
 
+
         sc.close();
     }
 }

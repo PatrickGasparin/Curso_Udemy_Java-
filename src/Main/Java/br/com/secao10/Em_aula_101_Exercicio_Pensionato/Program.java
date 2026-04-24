@@ -1,6 +1,6 @@
 package Main.Java.br.com.secao10.Em_aula_101_Exercicio_Pensionato;
 
-import Main.Java.br.com.secao10.Em_aula_101_Exercicio_Pensionato.entities.Quarto;
+import Main.Java.br.com.secao10.Em_aula_101_Exercicio_Pensionato.entities.Aluguel;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Quarto [] vect_quartos = new Quarto[9];
+        Aluguel[] vect_aluguel = new Aluguel[9];
 
         System.out.print("Quantos alunos voce vai digitar? ");
         int n = sc.nextInt();
@@ -33,20 +33,20 @@ public class Program {
             System.out.print("Quarto: ");
             int quarto = sc.nextInt();
 
-            vect_quartos[quarto] = new Quarto(nome,email,quarto);
+            vect_aluguel[quarto] = new Aluguel(nome,email,quarto);
         }
 
         System.out.println();
         System.out.println("Quartos alugados: ");
 
-        for (int i = 0; i < vect_quartos.length; i++){
-            if (vect_quartos[i] != null){
+        for (int i = 0; i < vect_aluguel.length; i++){
+            if (vect_aluguel[i] != null){
                 System.out.println(
-                        vect_quartos[i].getQuarto()
+                        vect_aluguel[i].getQuarto()
                         + ": "
-                        + vect_quartos[i].getNome()
+                        + vect_aluguel[i].getNome()
                         + ", "
-                        + vect_quartos[i].getEmail()
+                        + vect_aluguel[i].getEmail()
                 );
             }
         }

@@ -1,12 +1,12 @@
 package Main.Java.br.com.secao10.Em_aula_101_Exercicio_Pensionato.entities;
 
-public class Quarto {
+public class Aluguel {
 
     private String nome;
     private String email;
     private int quarto;
 
-    public Quarto(String nome, String email, int quarto) {
+    public Aluguel(String nome, String email, int quarto) {
         this.nome = nome;
         this.email = email;
         this.quarto = quarto;

@@ -79,7 +79,7 @@ public class Em_aula_106_Lista {
         System.out.println();
         System.out.println("------------------");
 
-        //encontrando primeiro elemento(.findFirst) com o filtro específico, caso contrario retorna null
+        //encontrando primeiro elemento(.findFirst) com o filtro específico, caso contrário retorna null
         String nome = lista.stream().filter(x -> x.charAt(0) == 'P').findFirst().orElse(null);
         System.out.println(nome);
 
